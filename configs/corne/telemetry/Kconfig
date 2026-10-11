@@ -1,0 +1,6 @@
+config CORNE_LAYER_TELEMETRY
+    bool "Corne active-layer GATT telemetry"
+    depends on BOARD_BLECORNE_LEFT && ZMK_SPLIT_ROLE_CENTRAL && ZMK_BLE
+    help
+      Expose the three compiled layers as an encrypted read/notify bitmask.
+      This service is only built for the Bluetooth Corne left central.

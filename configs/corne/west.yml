@@ -1,0 +1,37 @@
+manifest:
+  projects:
+    # ZMK revision used by the maker's successful 2026-10-05 workflow.
+    - name: zmk
+      url: https://github.com/zmkfirmware/zmk
+      revision: 5b51501fead672c41b5cfb396f3dafe0894bf4e9
+      import: app/west.yml
+    - name: wireless-corne_zmk_config
+      url: https://github.com/boardsource/wireless-corne_zmk_config
+      revision: 2158104902e164c317e35f53dfa0ca1e36e1a751
+      path: maker
+    # Pin ZMK's v4.1.0+zmk-fixes branch; retain its module import exclusions.
+    - name: zephyr
+      url: https://github.com/zmkfirmware/zephyr
+      revision: 10ba6d0cb38bc3d258775d27982f707599320085
+      clone-depth: 1
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
+  self:
+    path: config

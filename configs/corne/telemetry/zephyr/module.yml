@@ -1,0 +1,4 @@
+name: corne_layer_telemetry
+build:
+  cmake: .
+  kconfig: Kconfig

@@ -1,0 +1,5 @@
+if(CONFIG_CORNE_LAYER_TELEMETRY)
+  zephyr_library()
+  zephyr_library_include_directories(include ${APPLICATION_SOURCE_DIR}/include)
+  zephyr_library_sources(src/layer_telemetry.c)
+endif()

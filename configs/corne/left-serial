@@ -1,0 +1,4 @@
+# USB serial of the LEFT half while it is in the UF2 bootloader (lsusb -d 239a:009f).
+# Replace this before flashing a different keyboard. Every other serial is refused.
+# CORNE_LEFT_SERIAL overrides this file.
+CD72D2B4F8F50C97
