@@ -42,9 +42,9 @@ class LayoutTests(unittest.TestCase):
 
     def test_all_approved_bindings_in_physical_order(self):
         expected = [
-            ["&esc_lt 2 ESC"] + kp("Q W E R T Y U I O P EQUAL")
+            ["&esc_lt 2 ESC"] + kp("Q W E R T Y U I O P") + ["&outside_mod LEFT_ALT EQUAL"]
             + ["&outside_mod LEFT_GUI BSPC"] + kp("A S D F G H J K L SEMI")
-            + ["&outside_mod LEFT_ALT SQT", "&outside_mod LEFT_CONTROL GRAVE"]
+            + ["&kp SQT", "&outside_mod LEFT_CONTROL GRAVE"]
             + kp("Z X C V B N M COMMA DOT FSLH") + ["&outside_mod RIGHT_CONTROL MINUS"]
             + ["&space_cadet LSHFT LPAR", "&thumb_lt 1 BSPC", "&kp TAB", "&kp RET",
                "&thumb_lt 1 SPACE", "&space_cadet RSHFT RPAR"],

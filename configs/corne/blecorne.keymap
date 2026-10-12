@@ -52,8 +52,8 @@
         layer_0 {
             display-name = "Base";
             bindings = <
-                &esc_lt 2 ESC  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P  &kp EQUAL
-                &outside_mod LEFT_GUI BSPC  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K  &kp L  &kp SEMI  &outside_mod LEFT_ALT SQT
+                &esc_lt 2 ESC  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P  &outside_mod LEFT_ALT EQUAL
+                &outside_mod LEFT_GUI BSPC  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
                 &outside_mod LEFT_CONTROL GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &outside_mod RIGHT_CONTROL MINUS
                 &space_cadet LSHFT LPAR  &thumb_lt 1 BSPC  &kp TAB    &kp RET  &thumb_lt 1 SPACE  &space_cadet RSHFT RPAR
             >;
